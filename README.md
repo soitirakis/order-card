@@ -9,7 +9,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor]((htt
 
 ### Links
 
-- [GitHub Pages] 
+- [GitHub Pages] (https://soitirakis.github.io/order-card/)
+- [GitHub code] (https://github.com/soitirakis/order-card)
 
 
 ### Built with
