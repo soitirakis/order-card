@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root {
+  --boder-radius: 20px;
+  --text-color: hsl(224, 23%, 55%);
+  --bg-color: hsl(225, 100%, 98%);
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  background-image: url("../img/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  color: var(--text-color); /*desaturated blue*/
+  background-color: var(--bg-color);
+}
+.card-image {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.card {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 375px;
+  border-radius: 20px;
+  background-color: white;
+}
+.card-body {
+  padding: 20px;
+}
+.card-title {
+  color: hsl(223, 47%, 23%); /*dark blue*/
+  font-size: 1.7rem;
+}
+.card-offer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 100%;
+  background-color: hsl(225, 100%, 94%); /*pale blue*/
+  border-radius: 20px;
+}
+.card-offer-annual-plan {
+  line-height: 50%;
+  text-align: left;
+}
+.annual-plan {
+  font-weight: bold;
+  color: hsl(223, 47%, 23%);
+}
+.card-offer-change-link{
+  color: hsl(245, 75%, 52%);
+  font-weight: bold;
+}
+.card-offer-change-link:hover {
+  color: hsla(245, 75%, 52%, 0.5);
+}
+.card-button {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 16px 0px;
+  border: none;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: white;
+  color: var(--text-color);
+  margin-top: 16px;
+}
+.card-button:hover {
+  cursor: pointer;
+}
+.card-button-proceed-to-payment {
+  border-radius: 16px;
+  color: white;
+  background-color: hsl(245, 75%, 52%); /*bright blue*/
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 5px 10px hsl(225, 100%, 98%); /*very pale*/
+}
+.card-button-proceed-to-payment:hover {
+  background-color: hsla(245,75%,52%, 0.5);
+}
+.card-button-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (min-width: 1400px) {
+  html, body {
+    background-image: url("../img/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
